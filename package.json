@@ -2,7 +2,7 @@
   "private": false,
   "name": "@megabytelabs/jest-preset",
   "version": "1.0.0",
-  "description": "The Megabyte Labs ESLint configuration for linting TS, JS, JSON, YAML, and TOML",
+  "description": "A Jest preset that lints .spec.ts files, runs the tests, and includes fancy reporting",
   "license": "MIT",
   "author": "Brian Zalewski <brian@megabyte.space> (https://megabyte.space)",
   "homepage": "https://megabyte.space",
@@ -57,26 +57,20 @@
     "extends": "@megabytelabs/eslint-config"
   },
   "keywords": [
-    "editorconfig",
-    "eslint",
-    "formatter",
-    "javascript",
+    "jest",
+    "reports",
+    "tests",
+    "unit",
     "linter",
     "megabytelabs",
-    "prettier",
     "professormanhattan",
-    "schema",
-    "toml",
-    "tsdoc",
-    "typescript",
-    "typescript",
-    "yaml"
+    "typescript"
   ],
   "engines": {
     "node": ">=10"
   },
   "blueprint": {
-    "description": "The Megabyte Labs Jest preset for TypeScript, Node.js, and Angular",
+    "description": "A Jest preset that lints .spec.ts files, runs the tests, and includes fancy reporting",
     "overview": "This repository is the home of a [Jest](https://jestjs.io/) preset that is used in all of the Megabyte Labs projects that use Jest. Jest is a JavaScript testing framework maintained by Facebook. This particular Jest preset is built with support for TypeScript, Node.js, and Angular in mind. It includes several Jest plugins as well as improved HTML reports.",
     "name": "Jest Preset",
     "repository": {
