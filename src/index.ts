@@ -1,0 +1,61 @@
+import * as isCI from 'is-ci'
+
+module.exports = {
+  cache: !isCI,
+  cacheDirectory: '<rootDir>/.jest-cache',
+  collectCoverage: true,
+  collectCoverageFrom: ['**/*.(t|j)s', '!**/node_modules/**', '!build/**', '!coverage/**', '!dist/**', '!lib/**'],
+  coverageDirectory: '<rootDir>/coverage',
+  coverageReporters: ['text', 'lcov', 'cobertura'],
+  coverageThreshold: {
+    global: {
+      branches: 80,
+      functions: 80,
+      lines: 80,
+      statements: 80
+    }
+  },
+  moduleFileExtensions: ['js', 'json', 'ts'],
+  modulePathIgnorePatterns: ['.npm'],
+  projects: [
+    {
+      displayName: 'Jest',
+      moduleNameMapper: {
+        '@megabytelabs/(.*)-(.*)': '<rootDir>/src/$2'
+      },
+      preset: 'ts-jest',
+      testMatch: ['<rootDir>/src/**/*.spec.ts'],
+      transform: {
+        '^.+\\.(t|j)s$': 'ts-jest'
+      }
+    },
+    {
+      displayName: 'ESLint',
+      moduleNameMapper: {
+        '@megabytelabs/(.*)-(.*)': '<rootDir>/src/$2'
+      },
+      runner: 'jest-runner-eslint',
+      testMatch: ['<rootDir>/src/**/*.spec.ts'],
+      transform: {
+        '^.+\\.(t|j)s$': 'ts-jest'
+      }
+    }
+  ],
+  reporters: [
+    'default',
+    [
+      'jest-html-reporters',
+      {
+        filename: 'code-coverage.html',
+        logoImgPath: './.common/assets/logo-icon-square-200x200.png',
+        openReport: true,
+        pageTitle: 'Code Coverage Report',
+        publicPath: './coverage'
+      }
+    ]
+  ],
+  rootDir: 'src',
+  testEnvironment: 'node',
+  testResultsProcessor: require.resolve('./report'),
+  watchPlugins: ['jest-runner-eslint/watch-fix']
+}

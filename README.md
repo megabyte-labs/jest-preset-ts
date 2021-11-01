@@ -1,3 +1,3 @@
-# Jest
+# Jest Preset
 
-The Megabyte Labs jest-preset
+Shared Jest preset
