@@ -56,6 +56,5 @@ module.exports = {
   ],
   rootDir: 'src',
   testEnvironment: 'node',
-  testResultsProcessor: require.resolve('./report'),
   watchPlugins: ['jest-runner-eslint/watch-fix']
 }

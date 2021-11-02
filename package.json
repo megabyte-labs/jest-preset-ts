@@ -15,10 +15,11 @@
     "email": "help@megabyte.space",
     "url": "https://gitlab.com/megabyte-labs/npm/configs/eslint/-/issues"
   },
-  "main": "dist/index.js",
+  "main": "jest.config.js",
   "files": [
     "jest.config.js",
     "jest.config.js.map",
+    "jest.d.ts",
     "README.md"
   ],
   "scripts": {
@@ -34,19 +35,29 @@
     "jest": "^27.2.5",
     "jest-html-reporters": "^2.1.6",
     "jest-in-case": "^1.0.2",
+<<<<<<< HEAD
     "jest-runner-eslint": "^1.0.0"
   },
   "peerDependencies": {
     "typescript": "^4.4.4"
+=======
+    "jest-runner-eslint": "^1.0.0",
+    "ts-jest": "^27.0.3"
+>>>>>>> e0bb2e43b87f690acf9e516338e0dc2521ce99fd
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^13.1.0",
     "@megabytelabs/eslint-config": "^1.0.6",
     "@megabytelabs/prettier-config": "^14.14.14",
     "@types/is-ci": "^3.0.0",
+<<<<<<< HEAD
     "@types/jest": "^27.0.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.1.0"
+=======
+    "cz-conventional-changelog": "^3.3.0",
+    "typescript": "^4.4.4"
+>>>>>>> e0bb2e43b87f690acf9e516338e0dc2521ce99fd
   },
   "eslintConfig": {
     "extends": "@megabytelabs/eslint-config"
@@ -65,9 +76,24 @@
     "node": ">=10"
   },
   "blueprint": {
-    "description": "A Jest preset that lints .spec.ts files, runs the tests, and includes fancy reporting",
-    "overview": "This repository is the home of a [Jest](https://jestjs.io/) preset that is used in all of the Megabyte Labs projects that use Jest. Jest is a JavaScript testing framework maintained by Facebook. This particular Jest preset is built with support for TypeScript, Node.js, and Angular in mind. It includes several Jest plugins as well as improved HTML reports.",
-    "name": "Jest Preset",
+    "description": "Provides a Jest preset that lints .spec.ts files, runs the tests, and includes fancy reporting",
+    "overview": "This is a [Jest](https://jestjs.io/) preset that is used in all of the Megabyte Labs projects that use Jest. Jest is a JavaScript testing framework maintained by Facebook. This particular Jest preset is built with support for TypeScript, Node.js, and Angular in mind. It includes several Jest plugins as well as improved HTML reports.",
+    "name": "Jest",
+    "jsonFiles": {
+      "package.json": {
+        "files": [
+          "jest.config.js",
+          "jest.config.js.map",
+          "jest.d.ts",
+          "README.md"
+        ],
+        "main": "jest.config.js",
+        "type": "module"
+      },
+      "tsconfig.json": {
+        "outDir": "./"
+      }
+    },
     "repository": {
       "github": "https://github.com/ProfessorManhattan/jest-preset",
       "gitlab": "https://gitlab.com/megabyte-labs/npm/configs/jest"
