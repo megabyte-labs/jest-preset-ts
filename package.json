@@ -76,6 +76,7 @@
         "files": [
           "jest.config.js",
           "jest.config.js.map",
+          "jest.d.ts",
           "README.md"
         ],
         "main": "jest.config.js",
