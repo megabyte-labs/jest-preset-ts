@@ -66,7 +66,7 @@
     "node": ">=10"
   },
   "blueprint": {
-    "description": "A Jest preset that lints .spec.ts files, runs the tests, and includes fancy reporting",
+    "description": "Provides a Jest preset that lints .spec.ts files, runs the tests, and includes fancy reporting",
     "overview": "This repository is the home of a [Jest](https://jestjs.io/) preset that is used in all of the Megabyte Labs projects that use Jest. Jest is a JavaScript testing framework maintained by Facebook. This particular Jest preset is built with support for TypeScript, Node.js, and Angular in mind. It includes several Jest plugins as well as improved HTML reports.",
     "name": "Jest Preset",
     "jsonFiles": {
