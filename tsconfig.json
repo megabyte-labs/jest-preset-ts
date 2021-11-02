@@ -17,7 +17,7 @@
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "./dist",
+    "outDir": "./",
     "pretty": true,
     "removeComments": true,
     "resolveJsonModule": true,
