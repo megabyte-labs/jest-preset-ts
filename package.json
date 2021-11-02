@@ -17,7 +17,8 @@
   },
   "main": "dist/index.js",
   "files": [
-    "dist/",
+    "jest.config.js",
+    "jest.config.js.map",
     "README.md"
   ],
   "scripts": {
@@ -33,11 +34,7 @@
     "jest": "^27.2.5",
     "jest-html-reporters": "^2.1.6",
     "jest-in-case": "^1.0.2",
-    "jest-runner-eslint": "^1.0.0",
-    "mkdirp": "^1.0.4",
-    "strip-ansi": "^7.0.1",
-    "ts-jest": "^27.0.3",
-    "xmlbuilder": "^15.1.1"
+    "jest-runner-eslint": "^1.0.0"
   },
   "peerDependencies": {
     "typescript": "^4.4.4"
@@ -48,10 +45,8 @@
     "@megabytelabs/prettier-config": "^14.14.14",
     "@types/is-ci": "^3.0.0",
     "@types/jest": "^27.0.1",
-    "@types/mkdirp": "^1.0.2",
-    "@types/xmlbuilder": "^11.0.1",
-    "ansi-regex": "^6.0.1",
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.1.0"
   },
   "eslintConfig": {
     "extends": "@megabytelabs/eslint-config"
