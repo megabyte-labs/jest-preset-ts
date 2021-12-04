@@ -4,7 +4,13 @@ module.exports = {
   cache: !isCI,
   cacheDirectory: '<rootDir>/.jest-cache',
   collectCoverage: true,
-  collectCoverageFrom: ['**/*.(t|j)s', '!**/node_modules/**', '!build/**', '!coverage/**', '!dist/**', '!lib/**'],
+  collectCoverageFrom: [
+    '<rootDir>**/*.(t|j)s',
+    '!**/node_modules/**',
+    '!**/vendor/**',
+    '!<rootDir>/src/**/index.ts',
+    '!<rootDir>/src/**/*.module.ts'
+  ],
   coverageDirectory: '<rootDir>/coverage',
   coverageReporters: ['text', 'lcov', 'cobertura'],
   coverageThreshold: {
@@ -21,7 +27,7 @@ module.exports = {
     {
       displayName: 'Jest',
       moduleNameMapper: {
-        '@megabytelabs/(.*)-(.*)': '<rootDir>/src/$2'
+        '@mblabs/(.*)-(.*)': '<rootDir>/src/$2'
       },
       preset: 'ts-jest',
       testMatch: ['<rootDir>/src/**/*.spec.ts'],
@@ -32,7 +38,7 @@ module.exports = {
     {
       displayName: 'ESLint',
       moduleNameMapper: {
-        '@megabytelabs/(.*)-(.*)': '<rootDir>/src/$2'
+        '@mblabs/(.*)-(.*)': '<rootDir>/src/$2'
       },
       runner: 'jest-runner-eslint',
       testMatch: ['<rootDir>/src/**/*.spec.ts'],
@@ -56,5 +62,13 @@ module.exports = {
   ],
   rootDir: 'src',
   testEnvironment: 'node',
+  testPathIgnorePatterns: [
+    '<rootDir>/build/',
+    '<rootDir>/coverage/',
+    '<rootDir>/dist/',
+    '<rootDir>/e2e/',
+    '<rootDir>/lib/',
+    '<rootDir>/node_modules/'
+  ],
   watchPlugins: ['jest-runner-eslint/watch-fix']
 }

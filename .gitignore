@@ -53,6 +53,9 @@ dist/
 env.bak/
 env/
 ENV/
+jest.config.d.ts
+jest.config.js
+jest.config.js.map
 htmlcov/
 Icon
 local_settings.py
