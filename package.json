@@ -15,17 +15,19 @@
     "url": "https://gitlab.com/megabyte-labs/npm/configs/jest-preset-ts/-/issues"
   },
   "type": "commonjs",
-  "main": "dist/main.js",
+  "main": "jest-preset.js",
   "files": [
-    "dist"
+    "jest-preset.js",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json && cp -rT dist/ .",
+    "build": "task npm:build:tsconfig && cp -rT dist/ .",
     "help": "task --list",
     "prepare": "task common:husky",
     "repair": "bash <(curl -sS https://install.doctor/repair)",
     "start": "bash .config/start.sh",
-    "test": "echo 'No tests to perform'"
+    "test": "task npm:test:none"
   },
   "config": {
     "commitizen": {
@@ -104,7 +106,7 @@
     "gitlab_group_id": "",
     "gitlab_project_id": "33307296",
     "group": "npm",
-    "jsonFiles": {
+    "jsonOverrides": {
       "package.json": {
         "files": [
           "jest-preset.js",

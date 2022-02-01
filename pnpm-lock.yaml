@@ -77,7 +77,7 @@ devDependencies:
   '@washingtondc/release': 0.0.2_typescript@4.5.5
   esbuild: 0.12.29
   esbuild-node-externals: 1.4.1_esbuild@0.12.29
-  eslint-config-strict-mode: 1.0.28_jest@27.4.7+typescript@4.5.5
+  eslint-config-strict-mode: 1.0.30_jest@27.4.7+typescript@4.5.5
   semantic-release-config: 0.0.12_typescript@4.5.5
   sleekfast: 0.0.1
   typescript: 4.5.5
@@ -6934,11 +6934,6 @@ packages:
       ieee754: 1.2.1
     dev: true
 
-  /builtin-modules/1.1.1:
-    resolution: {integrity: sha1-Jw8HbFpywC9bZaR9+Uxf46J4iS8=}
-    engines: {node: '>=0.10.0'}
-    dev: true
-
   /builtin-modules/3.2.0:
     resolution: {integrity: sha512-lGzLKcioL90C7wMczpkY0n/oART3MbBa8R9OFGE1rJxoVI86u4WAGfEk8Wjv10eKSyTHVGkSo3bvBylCEtk7LA==}
     engines: {node: '>=6'}
@@ -9559,8 +9554,8 @@ packages:
       eslint: 8.8.0
     dev: true
 
-  /eslint-config-strict-mode/1.0.28_jest@27.4.7+typescript@4.5.5:
-    resolution: {integrity: sha512-4f/cDnvfoyLf4zj/QhIvYzCeWR5cqf+qKzOvel6HKHp4ILjawGcwBc5h+J03TIKrJezLf7y74u6Udm8y5HWbHg==}
+  /eslint-config-strict-mode/1.0.30_jest@27.4.7+typescript@4.5.5:
+    resolution: {integrity: sha512-I/nN3mV0wuCpSRmoseRhU4zv7A1R2cktYe7TPA2UgDLRu6MbdyoXDFBP7puidXXasBsgwYvzc8UwlSjBvKfrdA==}
     engines: {node: '>=14.18.0'}
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.10.2_2595c2126aec4d4b6e944b931dabb4c2
@@ -9615,7 +9610,7 @@ packages:
       eslint-plugin-yml: 0.10.1_eslint@8.8.0
       glob: 7.2.0
       parse-gitignore: 1.0.1
-      tslint: 6.1.3_typescript@4.5.5
+      tslib: 2.3.1
       yaml: 1.10.2
     transitivePeerDependencies:
       - jest
@@ -20799,30 +20794,6 @@ packages:
   /tslib/2.3.1:
     resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
 
-  /tslint/6.1.3_typescript@4.5.5:
-    resolution: {integrity: sha512-IbR4nkT96EQOvKE2PW/djGz8iGNeJ4rF2mBfiYaR/nvUWYKJhLwimoJKgjIFEIDibBtOevj7BqCRL4oHeWWUCg==}
-    engines: {node: '>=4.8.0'}
-    deprecated: TSLint has been deprecated in favor of ESLint. Please see https://github.com/palantir/tslint/issues/4534 for more information.
-    hasBin: true
-    peerDependencies:
-      typescript: '>=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >=3.0.0-dev || >= 3.1.0-dev || >= 3.2.0-dev || >= 4.0.0-dev'
-    dependencies:
-      '@babel/code-frame': 7.16.7
-      builtin-modules: 1.1.1
-      chalk: 2.4.2
-      commander: 2.20.3
-      diff: 4.0.2
-      glob: 7.2.0
-      js-yaml: 3.14.1
-      minimatch: 3.0.4
-      mkdirp: 0.5.5
-      resolve: 1.22.0
-      semver: 5.7.1
-      tslib: 1.14.1
-      tsutils: 2.29.0_typescript@4.5.5
-      typescript: 4.5.5
-    dev: true
-
   /tsutils-etc/1.4.1_tsutils@3.21.0+typescript@4.5.5:
     resolution: {integrity: sha512-6UPYgc7OXcIW5tFxlsZF3OVSBvDInl/BkS3Xsu64YITXk7WrnWTVByKWPCThFDBp5gl5IGHOzGMdQuDCE7OL4g==}
     hasBin: true
@@ -20834,15 +20805,6 @@ packages:
       tsutils: 3.21.0_typescript@4.5.5
       typescript: 4.5.5
       yargs: 17.3.1
-    dev: true
-
-  /tsutils/2.29.0_typescript@4.5.5:
-    resolution: {integrity: sha512-g5JVHCIJwzfISaXpXE1qvNalca5Jwob6FjI4AoPlqMusJ6ftFE7IkkFoMhVLRgK+4Kx3gkzb8UZK5t5yTTvEmA==}
-    peerDependencies:
-      typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >= 3.0.0-dev || >= 3.1.0-dev'
-    dependencies:
-      tslib: 1.14.1
-      typescript: 4.5.5
     dev: true
 
   /tsutils/3.21.0_typescript@4.5.5:
