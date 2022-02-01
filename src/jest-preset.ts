@@ -1,5 +1,6 @@
 import * as isCI from 'is-ci'
 
+// eslint-disable-next-line unicorn/prefer-module
 module.exports = {
   cache: !isCI,
   cacheDirectory: '<rootDir>/.jest-cache',
