@@ -17,9 +17,8 @@
   "type": "commonjs",
   "main": "jest-preset.js",
   "files": [
-    "jest-preset.js",
-    "README.md",
-    "LICENSE"
+    "jest-preset.d.ts",
+    "jest-preset.js.map"
   ],
   "scripts": {
     "build": "task npm:build:tsconfig && cp -rT dist/ .",
@@ -34,7 +33,7 @@
       "path": "node_modules/cz-emoji-conventional"
     }
   },
-  "typings": "dist/main.d.ts",
+  "typings": "jest-preset.d.ts",
   "dependencies": {
     "@jest-runner/electron": "^3.0.1",
     "@storybook/addon-storyshots": "^6.3.12",
@@ -75,8 +74,8 @@
     "@washingtondc/release": "^0.0.2",
     "esbuild": "^0.12.29",
     "esbuild-node-externals": "^1.3.0",
-    "eslint-config-strict-mode": "^1.0.28",
-    "semantic-release-config": "^0.0.12",
+    "eslint-config-strict-mode": "^1.0.30",
+    "semantic-release-config": "^0.0.16",
     "sleekfast": "^0.0.1",
     "typescript": "^4.4.4"
   },
@@ -109,11 +108,11 @@
     "jsonOverrides": {
       "package.json": {
         "files": [
-          "jest-preset.js",
-          "README.md",
-          "LICENSE"
+          "jest-preset.d.ts",
+          "jest-preset.js.map"
         ],
-        "main": "jest-preset.js"
+        "main": "jest-preset.js",
+        "typings": "jest-preset.d.ts"
       },
       "tsconfig.json": {
         "outDir": "./"
