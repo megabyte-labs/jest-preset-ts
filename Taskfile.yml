@@ -11,9 +11,6 @@ includes:
   ci: ./.config/taskfiles/ci/Taskfile.yml
   ci:github: ./.config/taskfiles/ci/Taskfile-github.yml
   common: ./.config/taskfiles/common/Taskfile.yml
-  project:
-    taskfile: Taskfile-project.yml
-    optional: true
   common:code: ./.config/taskfiles/common/Taskfile-code.yml
   common:update: ./.config/taskfiles/common/Taskfile-update.yml
   docker: ./.config/taskfiles/docker/Taskfile.yml
@@ -34,6 +31,9 @@ includes:
   install:npm: ./.config/taskfiles/install/Taskfile-npm.yml
   install:python: ./.config/taskfiles/install/Taskfile-python.yml
   install:software: ./.config/taskfiles/install/Taskfile-software.yml
+  project:
+    taskfile: Taskfile-project.yml
+    optional: true
   lint: ./.config/taskfiles/lint/Taskfile.yml
   lint:esprint: ./.config/taskfiles/lint/Taskfile-esprint.yml
   lint:markdown: ./.config/taskfiles/lint/Taskfile-markdown.yml
