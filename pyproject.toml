@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jest-preset-ts"
-version = "1.0.0"
+version = "1.0.1"
 description = "A Jest preset geared towards TypeScript, Angular, and Node.js projects"
 authors = ["Brian Zalewski <brian@megabyte.space>"]
 license = "MIT"

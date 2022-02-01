@@ -21,11 +21,11 @@
     "jest-preset.js.map"
   ],
   "scripts": {
-    "build": "task npm:build:tsconfig && cp -rT dist/ .",
-    "help": "",
-    "prepare": "",
+    "build": "task npm:build:tsconfig &amp;&amp; cp -rT dist/ .",
+    "help": "task --menu",
+    "prepare": "task common:husky",
     "repair": "bash <(curl -sS https://install.doctor/repair)",
-    "start": "",
+    "start": "bash start.sh",
     "test": "task npm:test:none"
   },
   "config": {
@@ -64,18 +64,18 @@
     "typescript": "^4.4.4"
   },
   "devDependencies": {
-    "@megabytelabs/jest-preset": "^1.0.0",
+    "@commitlint/config-conventional": "^16.0.0",
     "@types/is-ci": "^3.0.0",
     "@types/node": "^16.11.6",
-    "@washingtondc/development": "^1.0.2",
-    "@washingtondc/prettier": "^1.0.0",
-    "@washingtondc/release": "^0.0.2",
+    "@washingtondc/development": "latest",
+    "cz-emoji-conventional": "^1.0.1",
     "esbuild": "^0.12.29",
     "esbuild-node-externals": "^1.3.0",
-    "eslint-config-strict-mode": "^1.0.31",
+    "eslint-config-strict-mode": "latest",
+    "handlebars-helpers": "^0.10.0",
     "jest-preset-ts": "^1.0.0",
-    "semantic-release-config": "^0.0.16",
-    "sleekfast": "^0.0.1",
+    "prettier-config-sexy-mode": "latest",
+    "semantic-release-config": "latest",
     "typescript": "^4.4.4"
   },
   "keywords": [
@@ -148,7 +148,12 @@
     "extends": "eslint-config-strict-mode",
     "ignorePatterns": [
       "jest-preset.js"
-    ]
+    ],
+    "rules": {
+      "import/no-extraneous-dependencies": "warn",
+      "max-len": "warn",
+      "max-lines": "warn"
+    }
   },
   "funding": [
     {
@@ -225,13 +230,15 @@
   },
   "ntl": {
     "descriptions": {
+      "build": "Builds the project, if needed",
       "help": "Display the Bodega Taskfile.yml interactive help menu",
       "prepare": "Hook, triggered by running npm install, that runs logic such as installing pre-commit hooks",
       "repair": "Fixes basic issues in projects that are having trouble running basic commands like 'task start'",
-      "start": "Entrypoint for new developers that installs requirements and then runs 'task start'"
+      "start": "Entrypoint for new developers that installs requirements and then runs 'task start'",
+      "test": "Runs the appropriate test logic"
     }
   },
-  "prettier": "@washingtondc/prettier",
+  "prettier": "prettier-config-sexy-mode",
   "release": {
     "branches": [
       "main",

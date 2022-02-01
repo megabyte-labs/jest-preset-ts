@@ -29,8 +29,8 @@
 </div>
 <br/>
 <div align="center">
-  <a href="https://www.npmjs.com/package/jest-preset-ts" title="Version 1.0.0" target="_blank">
-    <img alt="Version: 1.0.0" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAACNJREFUCNdjIACY//+BEp9hhM3hAzYQwoBIAqEDYQrCZLwAAGlFKxU1nF9cAAAAAElFTkSuQmCC&style=flat-square" />
+  <a href="https://www.npmjs.com/package/jest-preset-ts" title="Version 1.0.1" target="_blank">
+    <img alt="Version: 1.0.1" src="https://img.shields.io/badge/version-1.0.1-blue.svg?cacheSeconds=2592000&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAACNJREFUCNdjIACY//+BEp9hhM3hAzYQwoBIAqEDYQrCZLwAAGlFKxU1nF9cAAAAAElFTkSuQmCC&style=flat-square" />
   </a>
   <a href="https://gitlab.com/megabyte-labs/npm/configs/jest-preset-ts/-/commits/master" title="GitLab CI build status" target="_blank">
     <img alt="Build status" src="https://img.shields.io/gitlab/pipeline-status/megabyte-labs/npm/config/jest-preset-ts?branch=master&label=build&logo=gitlab&logoColor=white&style=flat-square">
