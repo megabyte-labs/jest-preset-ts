@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "jest-preset-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Jest preset geared towards TypeScript, Angular, and Node.js projects",
   "license": "MIT",
   "author": "Brian Zalewski <brian@megabyte.space> (https://megabyte.space)",
