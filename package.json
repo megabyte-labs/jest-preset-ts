@@ -21,7 +21,7 @@
     "jest-preset.js.map"
   ],
   "scripts": {
-    "build": "task npm:build:tsconfig &amp;&amp; cp -rT dist/ .",
+    "build": "task npm:build:tsconfig && cp -rT dist/ .",
     "help": "task --menu",
     "prepare": "task common:husky",
     "repair": "bash <(curl -sS https://install.doctor/repair)",
