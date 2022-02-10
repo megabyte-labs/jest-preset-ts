@@ -40,7 +40,7 @@
     "@types/jest-json-schema": "^2.1.4",
     "expect-puppeteer": "^6.1.0",
     "is-ci": "^3.0.1",
-    "jest": "^27.4.7",
+    "jest": "^27.5.1",
     "jest-chain": "^1.1.5",
     "jest-dom": "^4.0.0",
     "jest-html-reporters": "^2.1.7",
