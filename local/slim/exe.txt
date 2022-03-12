@@ -21,3 +21,6 @@ git-cz
 husky
 git-cz
 commitlint
+husky
+commitlint
+git-cz
