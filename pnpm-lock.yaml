@@ -3499,7 +3499,7 @@ packages:
   /@types/jest-json-schema/2.1.4:
     resolution: {integrity: sha512-jAvF/IsPhF1bEqJxMR90z4vTCbuJAqDMG0stfsBceSInu1NphLKMR1HhjkDC54KvfAIGDlNHA1jyRCcSFqvPfg==}
     dependencies:
-      '@types/jest': 26.0.24
+      '@types/jest': 27.4.1
       ajv: 6.12.6
 
   /@types/jest-specific-snapshot/0.5.5:
@@ -3512,6 +3512,12 @@ packages:
     dependencies:
       jest-diff: 26.6.2
       pretty-format: 26.6.2
+
+  /@types/jest/27.4.1:
+    resolution: {integrity: sha512-23iPJADSmicDVrWk+HT58LMJtzLAnB2AgIzplQuq/bSrGaxCrlvRFjGbXmamnnk/mAmCdLStiGqggu28ocUyiw==}
+    dependencies:
+      jest-matcher-utils: 27.5.1
+      pretty-format: 27.5.1
 
   /@types/json-schema/7.0.9:
     resolution: {integrity: sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==}
