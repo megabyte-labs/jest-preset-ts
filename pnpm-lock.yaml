@@ -3499,7 +3499,7 @@ packages:
   /@types/jest-json-schema/2.1.4:
     resolution: {integrity: sha512-jAvF/IsPhF1bEqJxMR90z4vTCbuJAqDMG0stfsBceSInu1NphLKMR1HhjkDC54KvfAIGDlNHA1jyRCcSFqvPfg==}
     dependencies:
-      '@types/jest': 27.4.1
+      '@types/jest': 26.0.24
       ajv: 6.12.6
 
   /@types/jest-specific-snapshot/0.5.5:
@@ -3512,12 +3512,6 @@ packages:
     dependencies:
       jest-diff: 26.6.2
       pretty-format: 26.6.2
-
-  /@types/jest/27.4.1:
-    resolution: {integrity: sha512-23iPJADSmicDVrWk+HT58LMJtzLAnB2AgIzplQuq/bSrGaxCrlvRFjGbXmamnnk/mAmCdLStiGqggu28ocUyiw==}
-    dependencies:
-      jest-matcher-utils: 27.5.1
-      pretty-format: 27.5.1
 
   /@types/json-schema/7.0.10:
     resolution: {integrity: sha512-BLO9bBq59vW3fxCpD4o0N4U+DXsvwvIcl+jofw0frQo/GrBFC+/jRZj1E7kgp6dvTyNmA4y6JCV5Id/r3mNP5A==}
@@ -8359,8 +8353,8 @@ packages:
     resolution: {integrity: sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==}
     dev: true
 
-  /flow-parser/0.173.0:
-    resolution: {integrity: sha512-gikomjo+jzdehhOCHP2Ca5y1HGK3jkODhUdTxk4a3SdyLAMBsEwb7KJETHzB4KQs7HhHcqhyT7mGmd9iT8B5Hg==}
+  /flow-parser/0.174.0:
+    resolution: {integrity: sha512-3EwYkq+vmjg7w6htm7lbosxjdsf5H+bWZXcKlg660UJRO1NoczKeYIxCU6hZqkfwsz0vjUDPH9isRRVmSm0Vag==}
     engines: {node: '>=0.4.0'}
 
   /flush-write-stream/1.1.1:
@@ -11438,7 +11432,7 @@ packages:
       '@babel/register': 7.17.7_@babel+core@7.17.7
       babel-core: 7.0.0-bridge.0_@babel+core@7.17.7
       colors: 1.4.0
-      flow-parser: 0.173.0
+      flow-parser: 0.174.0
       graceful-fs: 4.2.9
       micromatch: 3.1.10
       neo-async: 2.6.2
