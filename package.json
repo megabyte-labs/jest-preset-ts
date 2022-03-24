@@ -74,18 +74,18 @@
   },
   "optionalDependencies": {},
   "devDependencies": {
-    "@commitlint/config-conventional": "latest",
     "@types/is-ci": "^3.0.0",
     "@types/node": "^16.11.6",
     "esbuild": "^0.12.29",
     "esbuild-node-externals": "^1.3.0",
     "eslint-config-strict-mode": "latest",
     "git-cz-emoji": "latest",
-    "handlebars-helpers": "latest",
     "jest-preset-ts": "latest",
     "prettier-config-sexy-mode": "latest",
     "semantic-release-config": "latest",
-    "typescript": "^4.5.5"
+    "typescript": "^4.5.5",
+    "@commitlint/config-conventional": "latest",
+    "handlebars-helpers": "latest"
   },
   "keywords": [
     "config",
@@ -130,7 +130,7 @@
     "name": "Jest Preset TypeScript",
     "overview": "This is a [Jest](https://jestjs.io/) preset that is used in all of the [Megabyte Labs projects](https://gitlab.com/megabyte-labs) that use Jest. Jest is a JavaScript/TypeScript testing framework maintained by Facebook. This particular Jest preset is built with support for TypeScript, Node.js, and Angular in mind. It includes several Jest plugins as well as improved HTML reports. Out of the box, it lints `.spec.ts` files, runs the tests, and includes fancy reporting.",
     "repository": {
-      "github": "https://github.com/ProfessorManhattan/jest-preset-ts",
+      "github": "https://github.com/megabyte-labs/jest-preset-ts",
       "gitlab": "https://gitlab.com/megabyte-labs/npm/configs/jest-preset-ts"
     },
     "scriptsBuild": "task npm:build:tsconfig && cp -rT dist/ .",
@@ -149,9 +149,7 @@
     "showAuthor": true
   },
   "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ],
+    "extends": [],
     "helpUrl": "https://megabyte.space/docs/contributing/commits"
   },
   "eslintConfig": {
