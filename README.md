@@ -64,9 +64,7 @@
 - [Overview](#overview)
 - [Requirements](#requirements)
   - [Developer Requirements](#developer-requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Plugins](#plugins)
+- [This Repository (Shared Common)](#this-repository-shared-common)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -97,81 +95,11 @@ npm run help
 
 `npm run help` will ensure Bodega is installed and then open an interactive dialog where you can explore and learn about various developer commands.
 
-<a href="#installation" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
+<a href="#this-repository-shared-common" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
-## Installation
+## This Repository (Shared Common)
 
-To use this Jest preset/configuration in your project, first install the NPM package in your NPM project with:
-
-```shell
-npm install --save-dev jest-preset-ts
-```
-
-Then, add the configuration to your `package.json` file. Your `package.json` might look something like:
-
-```json
-{
-  "name": "mypackage",
-  "version": "1.0.4"
-  ...
-  "jest": {
-    "preset": "@megabytelabs/jest-preset",
-    "reporters": [
-      "default",
-      [
-        "jest-html-reporters",
-        {
-          "filename": "index.html",
-          "openReport": true,
-          "pageTitle": "Code Coverage Report",
-          "publicPath": "./coverage"
-        }
-      ]
-    ]
-  }
-}
-```
-
-There are of course [other ways of including the Jest preset](https://jestjs.io/docs/configuration).
-
-<a href="#usage" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
-
-## Usage
-
-With the preset/configuration set up, you can now run `jest` commands and Jest will automatically detect and use the configuration stored in your `package.json` file. For instance, you can run Jest in watch mode with:
-
-```shell
-jest --watch
-```
-
-The Jest preset will scan your `src/` directory for test files and show the results after every time you make a file change in `--watch` mode.
-
-<a href="#plugins" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
-
-## Plugins
-
-This Jest preset/configuration includes all the best Jest plugins that have a decent amount of stars on GitHub. The plugins are listed below for your convenience:
-
-| Jest Plugin                                                                            | Description                                                                                     |
-| -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| [`@jest-runner/electron`](https://npmjs.com/package/@jest-runner/electron)             | custom test runner for Jest that allows tests to be run in Electron environment                 |
-| [`@storybook/addon-storyshots`](https://npmjs.com/package/@storybook/addon-storyshots) | StoryShots adds automatic Jest Snapshot Testing for Storybook                                   |
-| [`expect-puppeteer`](https://npmjs.com/package/expect-puppeteer)                       | Run the tests using Jest & Puppeteer                                                            |
-| [`jest-chain`](https://npmjs.com/package/jest-chain)                                   | Chain Jest matchers together to create one powerful assertion                                   |
-| [`jest-dom`](https://npmjs.com/package/jest-dom)                                       | Custom jest matchers to test the state of the DOM                                               |
-| [`jest-html-reporters`](https://npmjs.com/package/jest-html-reporters)                 | Jest test results processor for generating a summary in HTML                                    |
-| [`jest-image-snapshot`](https://npmjs.com/package/jest-image-snapshot)                 | Jest matcher for image comparisons                                                              |
-| [`jest-json-schema`](https://npmjs.com/package/jest-json-schema)                       | JSON schema matcher for Jest                                                                    |
-| [`jest-preset-angular`](https://npmjs.com/package/jest-preset-angular)                 | A preset of Jest configuration for Angular projects                                             |
-| [`jest-puppeteer`](https://npmjs.com/package/jest-puppeteer)                           | Jest preset containing all required configuration for writing integration tests using Puppeteer |
-| [`jest-runner-eslint`](https://npmjs.com/package/jest-runner-eslint)                   | ESLint runner for Jest                                                                          |
-| [`jest-runner-groups`](https://npmjs.com/package/jest-runner-groups)                   | A custom runner that allows to tag test files and run groups of tests with Jest                 |
-| [`jest-runner-prettier`](https://npmjs.com/package/jest-runner-prettier)               | Prettier runner for Jest                                                                        |
-| [`jest-runner-stylelint`](https://npmjs.com/package/jest-runner-stylelint)             | Stylelint runner for Jest                                                                       |
-| [`jest-runner-tsc`](https://npmjs.com/package/jest-runner-tsc)                         | A Jest runner for the TypeScript compiler                                                       |
-| [`jest-watch-master`](https://npmjs.com/package/jest-watch-master)                     | Jest watch plugin for checking changes since master                                             |
-| [`jest-watch-select-projects`](https://npmjs.com/package/jest-watch-select-projects)   | Select which Jest projects to run                                                               |
-| [`jest-watch-typeahead`](https://npmjs.com/package/jest-watch-typeahead)               | Jest watch plugin for filtering test by file name or test name                                  |
+This repository houses files that propagate downstream to project-specific repositories.
 
 <a href="#contributing" style="width:100%"><img style="width:100%" src="https://gitlab.com/megabyte-labs/assets/-/raw/master/png/aqua-divider.png" /></a>
 
