@@ -65,7 +65,7 @@
     "jest-runner-tsc": "^1.6.0",
     "jest-watch-master": "^1.0.0",
     "jest-watch-select-projects": "^2.0.0",
-    "jest-watch-typeahead": "^1.0.0",
+    "jest-watch-typeahead": "^1.1.0",
     "ts-jest": "^27.1.4",
     "tslib": "latest"
   },
@@ -74,18 +74,18 @@
   },
   "optionalDependencies": {},
   "devDependencies": {
+    "@commitlint/config-conventional": "latest",
     "@types/is-ci": "^3.0.0",
     "@types/node": "^16.11.6",
     "esbuild": "^0.12.29",
     "esbuild-node-externals": "^1.3.0",
     "eslint-config-strict-mode": "latest",
     "git-cz-emoji": "latest",
+    "handlebars-helpers": "latest",
     "jest-preset-ts": "latest",
     "prettier-config-sexy-mode": "latest",
     "semantic-release-config": "latest",
-    "typescript": "^4.5.5",
-    "@commitlint/config-conventional": "latest",
-    "handlebars-helpers": "latest"
+    "typescript": "^4.5.5"
   },
   "keywords": [
     "config",
@@ -152,7 +152,9 @@
     "showAuthor": true
   },
   "commitlint": {
-    "extends": [],
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
     "helpUrl": "https://megabyte.space/docs/contributing/commits"
   },
   "eslintConfig": {
