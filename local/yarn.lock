@@ -116,17 +116,17 @@
     prettier ">=2.3"
 
 "@storybook/addon-storyshots@^6.3.12":
-  version "6.5.3"
-  resolved "6.5.3"
-  integrity sha512-vo8Z5HztYotQq9PJTtXQYux6lZlyNT0gx62ZFVfKtUFPOkvvxpua89kQ0ASFc0aAYVyXy9pKENZ0D9KmXNyMCw==
+  version "6.5.4"
+  resolved "6.5.4"
+  integrity sha512-jH/4XdKW6H/wlXw7dHwlNkqvdVFHz4AkC0o54dEtKzzXyQ7oyiljg9UXDV4nutAKwhhwTZ1c7myf+QHuh1+4NQ==
   dependencies:
     "@jest/transform" "^26.6.2"
-    "@storybook/addons" "6.5.3"
+    "@storybook/addons" "6.5.4"
     "@storybook/babel-plugin-require-context-hook" "1.0.1"
-    "@storybook/client-api" "6.5.3"
-    "@storybook/core" "6.5.3"
-    "@storybook/core-client" "6.5.3"
-    "@storybook/core-common" "6.5.3"
+    "@storybook/client-api" "6.5.4"
+    "@storybook/core" "6.5.4"
+    "@storybook/core-client" "6.5.4"
+    "@storybook/core-common" "6.5.4"
     "@storybook/csf" "0.0.2--canary.4566f4d.1"
     "@types/glob" "^7.1.3"
     "@types/jest" "^26.0.16"
@@ -142,18 +142,18 @@
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-storyshots@^6.5.3":
-  version "6.5.3"
-  resolved "6.5.3"
-  integrity sha512-vo8Z5HztYotQq9PJTtXQYux6lZlyNT0gx62ZFVfKtUFPOkvvxpua89kQ0ASFc0aAYVyXy9pKENZ0D9KmXNyMCw==
+"@storybook/addon-storyshots@^6.5.4":
+  version "6.5.4"
+  resolved "6.5.4"
+  integrity sha512-jH/4XdKW6H/wlXw7dHwlNkqvdVFHz4AkC0o54dEtKzzXyQ7oyiljg9UXDV4nutAKwhhwTZ1c7myf+QHuh1+4NQ==
   dependencies:
     "@jest/transform" "^26.6.2"
-    "@storybook/addons" "6.5.3"
+    "@storybook/addons" "6.5.4"
     "@storybook/babel-plugin-require-context-hook" "1.0.1"
-    "@storybook/client-api" "6.5.3"
-    "@storybook/core" "6.5.3"
-    "@storybook/core-client" "6.5.3"
-    "@storybook/core-common" "6.5.3"
+    "@storybook/client-api" "6.5.4"
+    "@storybook/core" "6.5.4"
+    "@storybook/core-client" "6.5.4"
+    "@storybook/core-common" "6.5.4"
     "@storybook/csf" "0.0.2--canary.4566f4d.1"
     "@types/glob" "^7.1.3"
     "@types/jest" "^26.0.16"
